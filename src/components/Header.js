@@ -3,12 +3,13 @@ import { IoMdCart } from "react-icons/io";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-    const { products } = useSelector((state) => state.cart);
+    const cartState = useSelector((state) => state.cart);
+
     return (
         <>
             <nav>
                 <div className="logo">
-                    <img src="https://uomo-html.flexkitux.com/images/logo.png" alt="logo" />
+                <Link to="/"><img src="https://uomo-html.flexkitux.com/images/logo.png" alt="logo" /></Link>
                 </div>
                 <ul>
                     <li>
@@ -18,13 +19,15 @@ const Header = () => {
                         <Link to="/Category">Category</Link>
                     </li>
                     <li>
-                        <Link to="/cart"><IoMdCart /><span>{products.length}</span></Link>
+                        <Link to="/cart">
+                            <IoMdCart />
+                            <span>{cartState.length}</span>
+                        </Link>
                     </li>
-                    
                 </ul>
             </nav>
         </>
-    )
+    );
 }
 
 export default Header;

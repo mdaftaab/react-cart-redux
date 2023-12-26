@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <>
+        <div className="footer">
             <p>Copy@right text</p>
-        </>
+        </div>
     )
 }
 
