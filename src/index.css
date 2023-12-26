@@ -11,3 +11,120 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.main{
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px 0;
+  margin-top: 50px;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background: #2c76a1;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+  line-height: 50px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    justify-content: start;
+}
+
+.product-div {
+    max-width: 24%;
+    flex: 0 0 24%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.product-div img {
+  width: auto;
+  height: 190px;
+  margin: 20px auto;
+  display: block;
+  max-width: 100%;
+}
+.product-div p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-div h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-div h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2c76a1;
+}
+.main > h2 {
+    margin-bottom: 20px;
+}
+button.btn {
+  padding: 7px 14px;
+  margin-top: 15px;
+  border: none;
+  background: #2c76a1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+nav ul li a svg {
+    font-size: 23px;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+}
+
+nav ul li a span {
+    position: absolute;
+    top: -30px;
+    left: 7px;
+    font-size: 14px;
+}
